@@ -37,7 +37,7 @@ async function startServer() {
 
     // Sinkronisasi model (buat tabel jika belum ada)
     // Hati-hati dengan { force: true } atau { alter: true } di produksi
-    await sequelize.sync(); // Default: { force: false }
+    await sequelize.sync({ force: true }); // Default: { force: false }
     console.log("All models were synchronized successfully using ESM.");
 
     app.listen(PORT, () => {
