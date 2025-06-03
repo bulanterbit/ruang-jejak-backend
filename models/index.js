@@ -1,6 +1,7 @@
 // models/index.js
 import dotenv from "dotenv";
 dotenv.config();
+
 import { Sequelize } from "sequelize";
 
 import defineUserModel from "./user.js"; // Tambahkan .js pada impor lokal

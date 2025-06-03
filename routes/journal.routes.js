@@ -1,6 +1,6 @@
 // routes/journalRoutes.js
 import express from "express";
-import authenticateToken from "../authMiddleware.js"; // Impor middleware
+import authenticateToken from "../auth.middleware.js"; // Impor middleware
 
 const router = express.Router();
 
